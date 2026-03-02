@@ -1,0 +1,11 @@
+flask
+opencv - python
+pillow
+numpy
+pandas
+pytesseract
+openpyxl
+pdf2image
+
+
+#-----pip install -r requirements.txt-----

@@ -1,125 +1,116 @@
-# Safescript
+# SafeScript
 
-> A Python-based OCR system that extracts, processes, and structures medical data from documents using image processing and database integration.
+A Python-based OCR system that extracts and processes medical data from documents using image processing and database integration.
 
 ---
 
-## ✨ Overview
+## Overview
 
-**CodePulse** is designed to automate the extraction of information from medical documents using **OCR (Optical Character Recognition)** and convert unstructured data into structured, usable formats.
+SafeScript is designed to automate the extraction of information from medical documents using Optical Character Recognition (OCR) and convert unstructured data into structured formats.
 
-This project demonstrates:
+The project demonstrates:
 
-* Real-world data processing
 * OCR pipeline implementation
+* Data processing and extraction
 * Backend system design
-* Integration of multiple technologies
+* Integration of multiple libraries
 
 ---
 
-## 🔥 Key Features
+## Features
 
-* 📄 **OCR Extraction** — Reads text from images and documents
-* 🧠 **Data Processing** — Identifies prescriptions and diseases
-* 🗄️ **Database Integration** — Loads and queries structured data
-* ⚙️ **Automated Pipeline** — Input → Processing → Output
-* 🌐 **Flask Backend** — Runs as a simple web application
-
----
-
-## 🛠️ Tech Stack
-
-* **Language:** Python
-* **Backend:** Flask
-* **OCR:** Tesseract (via `pytesseract`)
-* **Image Processing:** OpenCV (`cv2`)
-* **Data Handling:** Pandas
-* **PDF Processing:** pdf2image
+* Extracts text from images and documents using OCR
+* Identifies prescriptions and diseases from extracted data
+* Processes and structures information
+* Integrates with a database for storage and lookup
+* Runs as a Flask-based application
 
 ---
 
-## 📁 Project Structure
+## Tech Stack
 
-```bash id="8q1t4f"
-CodePulse/
-│── app.py                # Main Flask app (entry point)
-│── ocr_reader.py         # OCR + extraction logic
-│── loaddatabase.py       # Data loading
-│── createdatabase.py     # Database creation
-│── medical_database.xlsx # Dataset
-│── requirements.txt      # Dependencies
+* Python
+* Flask
+* Tesseract OCR (via pytesseract)
+* OpenCV
+* Pandas
+* pdf2image
+
+---
+
+## Project Structure
+
+```bash id="q9n2fs"
+SafeScript/
+│── app.py                 # Main Flask application (entry point)
+│── ocr_reader.py          # Handles OCR processing and text extraction
+│── loaddatabase.py        # Loads and queries the medical dataset
+│── createdatabase.py      # Script to create/initialize the database
+│── medical_database.xlsx  # Dataset containing medical information
+│── requirements.txt       # List of Python dependencies
+│── uploaded.png           # Sample input file (optional)
+│── report.pdf             # Generated output (optional)
 ```
 
 ---
 
-## ⚙️ Setup & Installation
+## Installation
 
-### 1️⃣ Clone the repository
+Clone the repository:
 
-```bash id="p3p5c9"
-git clone https://github.com/Anik03-cmd/CodePulse.git
-cd CodePulse
+```bash id="k7r3ma"
+git clone https://github.com/Anik03-cmd/SafeScript.git
+cd SafeScript
 ```
 
-### 2️⃣ Install dependencies
+Install dependencies:
 
-```bash id="6ahvcm"
+```bash id="r4b8jt"
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Install system dependencies (Linux / Codespaces)
+Install system dependencies (Linux/Codespaces):
 
-```bash id="9rsxqz"
+```bash id="w1x9lz"
 sudo apt-get update
 sudo apt-get install -y tesseract-ocr poppler-utils libgl1
 ```
 
 ---
 
-## ▶️ Run the Application
+## Running the Application
 
-```bash id="q9rt3k"
+```bash id="d2v6kp"
 python app.py
 ```
 
-Then open:
+Open in browser:
 
-```
+```id="z8y4hn"
 http://127.0.0.1:5000
 ```
 
 ---
 
-## 🔄 Workflow
+## Workflow
 
-1. Upload a document/image
+1. Upload an image or document
 2. OCR extracts text
-3. Data is analyzed (prescription & disease detection)
-4. Information is processed and matched with database
-5. Output is generated
+3. Data is processed to identify relevant information
+4. Results are structured and returned
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
-* 🌐 Full frontend interface (React / improved UI)
-* 🤖 AI-based medical recommendations
-* 📊 Visualization dashboard
-* ☁️ Deployment (cloud hosting)
-
----
-
-## 💡 Why This Project Matters
-
-This project highlights:
-
-* Handling **unstructured → structured data**
-* Integration of **OCR + backend systems**
-* Practical problem-solving with real-world data
+* Improved frontend interface
+* Additional data extraction capabilities
+* Deployment support
+* Performance optimization
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Anik Biswas**
-🔗 https://github.com/Anik03-cmd
+Anik Biswas
+https://github.com/Anik03-cmd
